@@ -2,5 +2,7 @@ services:
   mcp:
     build: .
     container_name: demo-mcp
+    volumes:
+      - .:/home/appuser/app
     working_dir: /home/appuser/app
     tty: true
